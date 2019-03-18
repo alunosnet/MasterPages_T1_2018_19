@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MasterPageT1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h1>Módulo 7</h1>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="DivLogin" runat="server">
+            Este site utiliza cookies.
+            <asp:Button ID="Button1" runat="server" Text="Aceitar" OnClick="Button1_Click" />
+            <asp:Button ID="Button2" runat="server" Text="Rejeitar" OnClick="Button2_Click" />
+        </div>
+    </form>
+</body>
+</html>
